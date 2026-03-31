@@ -37,7 +37,7 @@ Planned GSoC extension: multimodal Sentinel-1 + Sentinel-2 + weather-driven spat
 
 ## Demo
 
-![Wildfire Risk Map Demo](https://github.com/Raga-V/wildfire-risk-mvp/raw/main/outputs/maps/wildfire_risk_map.png)
+![Wildfire Risk Map Demo](https://github.com/Raga-V/WildfirePredictionPOC/blob/main/wildfire-risk-mvp/outputs/maps/wildfire_risk_map.png)
 
 Interactive Folium map showing NDVI-derived risk levels: High (Red), Moderate (Orange), Low (Green).
 
