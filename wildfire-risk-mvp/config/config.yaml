@@ -1,0 +1,39 @@
+region:
+  name: "Southern California"
+  bbox:
+    west: -118.5
+    south: 33.8
+    east: -116.5
+    north: 35.0
+
+dates:
+  start: "2024-07-01"
+  end: "2024-07-31"
+
+gee:
+  project: "alaska-wildfire"
+
+sentinel2:
+  collection: "COPERNICUS/S2_SR_HARMONIZED"
+  cloud_cover_threshold: 20
+  bands:
+    nir: "B8"
+    red: "B4"
+
+ndvi:
+  thresholds:
+    low_risk_min: 0.4
+    moderate_risk_min: 0.2
+    high_risk_max: 0.2
+
+risk:
+  geojson_sample_scale: 500
+  geojson_max_features: 4000
+
+output:
+  map_file: "outputs/maps/wildfire_risk_map.html"
+  log_file: "outputs/logs/run.log"
+  colormap:
+    low: "#00cc44"
+    moderate: "#ffaa00"
+    high: "#cc0000"
